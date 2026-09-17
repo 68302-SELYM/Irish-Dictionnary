@@ -1,9 +1,110 @@
 [
     {
-        "id": "list-colors",
-        "title": "Colors",
+        "id": "list-1789658680864",
+        "title": "Core Words",
         "words": [
-            
+            {
+                "gaelic": "Í",
+                "english": "She, It, Her",
+                "phonetic": "",
+                "audio": ""
+            },
+            {
+                "gaelic": "É",
+                "english": "He, It, Him",
+                "phonetic": "",
+                "audio": ""
+            },
+            {
+                "gaelic": "Tú",
+                "english": "You",
+                "phonetic": "",
+                "audio": ""
+            },
+            {
+                "gaelic": "Do",
+                "english": "Your",
+                "phonetic": "",
+                "audio": ""
+            },
+            {
+                "gaelic": "Mé",
+                "english": "I, Me",
+                "phonetic": "",
+                "audio": ""
+            },
+            {
+                "gaelic": "Mo  / M'",
+                "english": "My",
+                "phonetic": "",
+                "audio": ""
+            },
+            {
+                "gaelic": "Go",
+                "english": "To",
+                "phonetic": "",
+                "audio": ""
+            },
+            {
+                "gaelic": "Tá",
+                "english": "Is",
+                "phonetic": "",
+                "audio": ""
+            },
+            {
+                "gaelic": "Haigh",
+                "english": "Hi",
+                "phonetic": "",
+                "audio": ""
+            }
+        ]
+    },
+    {
+        "id": "list-1789658889482",
+        "title": "Week Days",
+        "words": [
+            {
+                "gaelic": "Luan",
+                "english": "Monday",
+                "phonetic": "",
+                "audio": ""
+            },
+            {
+                "gaelic": "Máirt",
+                "english": "Tuesday",
+                "phonetic": "",
+                "audio": ""
+            },
+            {
+                "gaelic": "Ceadaoin",
+                "english": "Wednesday",
+                "phonetic": "",
+                "audio": ""
+            },
+            {
+                "gaelic": "Deardaoin",
+                "english": "Thursday",
+                "phonetic": "",
+                "audio": ""
+            },
+            {
+                "gaelic": "Aoine",
+                "english": "Friday",
+                "phonetic": "",
+                "audio": ""
+            },
+            {
+                "gaelic": "Satharn",
+                "english": "Saturday",
+                "phonetic": "",
+                "audio": ""
+            },
+            {
+                "gaelic": "Domhnach",
+                "english": "Sunday",
+                "phonetic": "",
+                "audio": ""
+            }
         ]
     }
 ]
