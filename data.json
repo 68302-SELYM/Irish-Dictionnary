@@ -1,10 +1,9 @@
 [
     {
-        "id": "list-basics",
-        "title": "Basics",
+        "id": "list-colors",
+        "title": "Colors",
         "words": [
-            { "gaelic": "Fáilte", "english": "Welcome", "phonetic": "[fawl-chuh]", "audio": "" },
-            { "gaelic": "Sláinte", "english": "Cheers", "phonetic": "[slawn-chuh]", "audio": "" }
+            
         ]
     }
 ]
