@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="IMG/Screenshot 2026-09-17 161236.png" >
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Irish</title>
+</head>
+<body>
+
+    <div id="main-header">
+        <button id="tab-dict" class="active" onclick="showSection('dict-section')">Dictionary</button>
+        <div class="header-separator"></div>
+        <button id="tab-flash" onclick="showSection('flashcard-menu')">Flashcards</button>
+    </div>
+
+    <!-- Section Dictionnaire -->
+    <div id="dict-section" style="width: 100%; max-width: 600px;">
+        <div class="action-bar" id="admin-bar">
+            <button class="glass-btn" onclick="openModal('modal-list')">+ Add List</button>
+            <button class="glass-btn" onclick="openModal('modal-word')">+ Add Word</button>
+            <button class="glass-btn" style="border-color: var(--irish-green); color: var(--irish-green);" onclick="downloadJSON()">💾 Export JSON</button>
+        </div>
+        <div id="dictionary-wrapper"></div>
+    </div>
+
+    <!-- Section Flashcards -->
+    <div id="flashcard-menu">
+        <button onclick="startWordsPreview()">Words</button>
+        <button onclick="startGame('guesser')">Guesser</button>
+        <button id="btn-mistakes" onclick="startGame('mistakes')">Mistakes</button>
+    </div>
+
+    <div id="game-container">
+        <button id="btn-back" class="glass-btn" onclick="quitGame()">&lt;-- Back</button>
+        <div id="game-summary" class="summary-box hidden"></div>
+        <div id="words-preview" class="list-box hidden"></div>
+        <button id="btn-start-words" class="glass-btn hidden" onclick="startWordsGame()">Start Flashcards</button>
+        <div id="active-game-area" class="hidden" style="width: 100%;">
+            <div class="card-container">
+                <div id="flashcard" class="card">
+                    <div class="card-face card-front">
+                        <span class="stats red" id="stat-errors">0</span>
+                        <span id="card-text-front" class="gaelic-word">Word</span>
+                        <span class="stats green" id="stat-success">0</span>
+                    </div>
+                    <div class="card-face card-back">
+                        <span id="card-text-back">Translation</span>
+                    </div>
+                </div>
+            </div>
+            <button id="btn-next-word" class="glass-btn hidden" onclick="nextWord()">Next Word</button>
+            <div id="options-container" class="hidden"></div>
+        </div>
+    </div>
+
+    <!-- Modals (Admin Only) -->
+    <div id="modal-list" class="modal-overlay hidden">
+        <div class="modal-content">
+            <h3>Create a new list</h3>
+            <input type="text" id="input-list-name" placeholder="List Title (e.g., School, Colors)">
+            <div class="modal-buttons">
+                <button class="glass-btn" onclick="closeModal('modal-list')">Cancel</button>
+                <button class="glass-btn" style="background: rgba(22,155,98,0.3);" onclick="saveList()">Create</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-word" class="modal-overlay hidden">
+        <div class="modal-content">
+            <h3>Add a new word</h3>
+            <select id="select-list-target"></select>
+            <input type="text" id="input-gaelic" placeholder="Gaelic Word">
+            <input type="text" id="input-english" placeholder="English Translation">
+            <input type="text" id="input-phonetic" placeholder="Phonetic (e.g., [fawl-chuh])">
+            <div class="modal-buttons">
+                <button class="glass-btn" onclick="closeModal('modal-word')">Cancel</button>
+                <button class="glass-btn" style="background: rgba(22,155,98,0.3);" onclick="saveWord()">Add</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
