@@ -18,6 +18,8 @@ body {
     align-items: center;
     user-select: none;
     -webkit-user-select: none;
+    min-height: 100vh;
+    box-sizing: border-box;
 }
 
 .glass-btn {
